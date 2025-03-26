@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header (Navigation) */
+header {
+    background-color: #2E8B57;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    background-color: #f9fcfa;
+    color: rgb(8, 0, 0);
+    /* padding: 15px; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.chatbot-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Embed Bot */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E8B57;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .chatbot-header {
+    background-color: #000700;
+    color: white;
+}
+
+body.dark-mode iframe {
+    border: 1px solid #fff;
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #3e9c5d;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .chatbot-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    iframe {
+        height: 500px;
+    }
+}
